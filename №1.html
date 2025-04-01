@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>№1</title>
+   </head>
+   <body>
+      <script>
+         let price = Number(prompt("Введите стоимость товара:"));
+         let money = Number(prompt("Введите количество денег:"));
+
+         if (!isNaN(price) && !isNaN(money) && price > 0 && money > 0) {
+            if (price <= money) {
+               alert(`Покупка совершена, сдача ${money - price} рублей`);
+            } else {
+               alert(`Для покупки не хватает ${price - money} рублей`);
+            }
+         } else {
+            alert("Введите правильные числовые значения");
+         }
+      </script>
+   </body>
+</html>
